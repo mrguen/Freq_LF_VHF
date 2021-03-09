@@ -1,0 +1,17 @@
+frequencyCounter 	KEYWORD1
+configureComputation	KEYWORD2
+stopComputation		KEYWORD2	
+freqSetup		KEYWORD2
+freqCount 	KEYWORD2
+getFrequency 	KEYWORD2   
+readFrequency 	KEYWORD2  
+standbyMode 	KEYWORD2
+beginSerial 	KEYWORD2
+endSerial 	KEYWORD2
+calibrate 	KEYWORD2 
+
+sleepMode	LITERAL1
+calibration	LITERAL1    
+
+ 
+
