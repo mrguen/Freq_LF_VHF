@@ -18,7 +18,7 @@ Les spécifications données sur Pandauino.com ne sont pas forcément à jour. L
 
 Vous trouverez dans ce dépôt le manuel utilisateur (sous https://github.com/mrguen/Freq_LF_VHF/tree/master/doc) et d'autres ressources (librairie etc).
 
-
+![Freq_LF_VHF](https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Alimentation%20sur%20connecteurs%20PCB.jpg?raw=true)
 
 
 
