@@ -14,11 +14,11 @@ Freq_LF_HF et Freq_LF_VHF sont des cartes fréquencemètres qui sont programmabl
 
 Une présentation est visible sur https://pandauino.com/fr/frequencemetre-compatible-arduino/ 
 
-Les spécifications données sur Pandauino.com ne sont pas forcément à jour. La dernière version de la carte mesure de signaux jusqu'à 200 MHz.
+Les spécifications données sur Pandauino.com ne sont pas forcément à jour. La dernière version de la carte mesure de signaux jusqu'à 210 MHz.
 
 Vous trouverez dans ce dépôt le manuel utilisateur (sous https://github.com/mrguen/Freq_LF_VHF/tree/master/doc) et d'autres ressources (librairie etc).
 
-
+![Freq_LF_VHF](https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Alimentation%20sur%20connecteurs%20PCB.jpg?raw=true)
 
 
 
