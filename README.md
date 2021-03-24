@@ -12,7 +12,7 @@ There are two version available
 
 You will find on this repository the user's manual (under https://github.com/mrguen/Freq_LF_VHF/tree/master/doc ) and other resources (library etc).
 
-https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Annoted%20presentation.jpg
+![Annoted view](https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Annoted%20presentation.jpg)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -28,4 +28,4 @@ Vous trouverez dans ce dépôt le manuel utilisateur (sous https://github.com/mr
 
 
 
-https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Pr%C3%A9sentation%20annot%C3%A9e.jpg
+![Présentation annotée](https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Pr%C3%A9sentation%20annot%C3%A9e.jpg)
