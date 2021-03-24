@@ -1,12 +1,18 @@
 # Freq_LF_VHF
 
+![Freq_LF_VHF](https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Alimentation%20sur%20connecteurs%20PCB.jpg?raw=true)
+
 Freq_LF_HF and Freq_LF_VHF are frequency counter boards that are programmable in the Arduino environment.
 
 A presentation is available at https://pandauino.com/en/arduino-compatible-frequency-counter/
 
-The specifications on Pandauino.com might not be up to date. The last version of the board can count signals up to 210 MHz. 
+There are two version available
+* Measuring <5 Hz to > 5 MHz
+* Measuring <5 Hz to > 210 MHz
 
 You will find on this repository the user's manual (under https://github.com/mrguen/Freq_LF_VHF/tree/master/doc ) and other resources (library etc).
+
+https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Annoted%20presentation.jpg
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -14,11 +20,12 @@ Freq_LF_HF et Freq_LF_VHF sont des cartes fréquencemètres qui sont programmabl
 
 Une présentation est visible sur https://pandauino.com/fr/frequencemetre-compatible-arduino/ 
 
-Les spécifications données sur Pandauino.com ne sont pas forcément à jour. La dernière version de la carte mesure de signaux jusqu'à 210 MHz.
+Il existe deux versions de la carte
+* Mesurant de moins de 5 Hz à plus de 5 MHz
+* Mesurant de moins de 5 Hz à plus de 210 MHz
 
 Vous trouverez dans ce dépôt le manuel utilisateur (sous https://github.com/mrguen/Freq_LF_VHF/tree/master/doc) et d'autres ressources (librairie etc).
 
-![Freq_LF_VHF](https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Alimentation%20sur%20connecteurs%20PCB.jpg?raw=true)
 
 
-
+https://github.com/mrguen/Freq_LF_VHF/blob/master/images/Pr%C3%A9sentation%20annot%C3%A9e.jpg
