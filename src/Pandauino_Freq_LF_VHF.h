@@ -74,6 +74,8 @@
   	Sleep 5 m.
   	Sleep disabled
 
+	F. reset (press)
+
   < Exit menu
 
 */
@@ -163,6 +165,8 @@ enum runMode {
 	display_sleep_30s,
 	display_sleep_5m,
 	display_sleep_disabled,
+
+	display_factory_reset,
 
 	display_exit_menu
 
@@ -261,6 +265,8 @@ class Pandauino_Freq_LF_VHF {
 		static void updateToEEPROM_refFrequency();
 		static void updateAllToEEPROM();
 
+		static void (* resetFunc)();
+
 		static void setSleepTimeout();
 
  		static void initVcc();
@@ -329,7 +335,7 @@ class Pandauino_Freq_LF_VHF {
 		static const char goingStandby[17];
 		static const char frequencySaved[17];
 		static const char frequencyOutOfRange[17];
-		static const char menuEntries[33][17];
+		static const char menuEntries[34][17];
 
   	static const byte EEPROMbaseAddress;
 		static const byte eepromInit;

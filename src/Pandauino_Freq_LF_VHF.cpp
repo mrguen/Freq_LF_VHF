@@ -140,7 +140,7 @@ const char Pandauino_Freq_LF_VHF::frequencySaved[17] = "Last fr. stored!  ";				
 const char Pandauino_Freq_LF_VHF::frequencyOutOfRange[17] = "F. out of range!";				// Displayed when storing the last frequency for reference
 
 // These menu entries are indexed as the runMode enum values
-const char Pandauino_Freq_LF_VHF::menuEntries[33][17] = {
+const char Pandauino_Freq_LF_VHF::menuEntries[34][17] = {
 "                ",
 "Frequency band >",
 "AUTO            ",
@@ -173,6 +173,7 @@ const char Pandauino_Freq_LF_VHF::menuEntries[33][17] = {
 "Sleep 30 s.     ",
 "Sleep 5 m.      ",
 "Sleep disabled  ",
+"F. reset (press)",
 "< Exit menu     "
 };
 
@@ -791,6 +792,7 @@ void Pandauino_Freq_LF_VHF::calibrate(long calFrequency) {
 
 }
 
+
 /* ************************************************************************************************************************************
   MEASUREMENT FUNCTIONS
 **************************************************************************************************************************************/
@@ -1005,6 +1007,10 @@ void Pandauino_Freq_LF_VHF::updateAllToEEPROM() {
 	updateToEEPROM_refFrequency();
 
 }
+
+//*********************************************************************************************************
+// Software Reset
+void (*Pandauino_Freq_LF_VHF::resetFunc) (void) = 0;
 
 //*********************************************************************************************************
 // setSleepTimeout
@@ -1591,6 +1597,9 @@ void Pandauino_Freq_LF_VHF::actions() {
 		sleepSetting = sleep_disabled;
 		break;
 
+		case display_factory_reset:
+		EEPROM_writeAnything(EEPROMbaseAddress, eepromInit+1); // dummy value to force update EEPROM after reset
+		resetFunc();
 	}
 
 	if (mode != previousMode) updateToEEPROM_mode();
@@ -1738,6 +1747,10 @@ void Pandauino_Freq_LF_VHF::buttonClick() {
 		break;
 
 		case display_sleep:
+		editMode = display_factory_reset;
+		break;
+
+		case display_factory_reset:
 		editMode = display_exit_menu;
 		break;
 
